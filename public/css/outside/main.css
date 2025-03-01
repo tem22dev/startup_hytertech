@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Header */
+
+/* End Header */
+
+/* Section */
+
+/* End Section */
+
+/* Limit lines */
+.limit-2-lines {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.limit-1-lines {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.limit-3-lines {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+.limit-4-lines {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+/* End Limit lines */
+
+/* Footer */
+
+/* End Footer */
+
+/* Modals */
+
+/* End Model */
+
+/* Slider */
+
+/* End slider */
+
+/* buttons */
+.button-contact {
+    display: inline-flex;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    background: #eb5155;
+    font-size: 16px;
+    color: #fff !important;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    text-decoration: none !important;
+    justify-content: space-between;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+.button-contact .wrap-icon {
+    font-size: 25px;
+    padding-left: 40px;
+    padding-right: 25px;
+}
+.button-contact .wrap-text {
+    display: flex;
+    flex-direction: column;
+    padding-right: 40px;
+}
+.button-contact .wrap-text span:first-child {
+    font-weight: 700;
+    font-size: 22px;
+}
+.button-contact .wrap-text span:last-child {
+    font-size: 14px;
+}
+
+/* section_subscribe */
+
+/* End buttons */
+
+/* Other elements */
+
+/* End Other elements */

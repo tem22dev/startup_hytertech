@@ -1,0 +1,30 @@
+name: hytertech
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    environment: develop
+    steps:
+    - name: Deploy using ssh
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{vars.SERVER_IP_ADDRESS}}
+        port: ${{vars.PORT}}
+        username: ${{vars.USERNAME}}
+        key: ${{secrets.SERVER_KEY}}
+        script: |
+          cd /home/u753039451/domains/hytertech.devmaster.online/public_html
+          git reset --hard
+          git pull origin main
+          composer2 update
+          php artisan migrate
+          php artisan db:seed
+          php artisan route:clear
+          php artisan cache:clear
+          php artisan config:clear
+          php artisan storage:link
+          php artisan config:cache
